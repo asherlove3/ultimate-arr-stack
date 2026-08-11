@@ -103,7 +103,7 @@ services:
       - SERVER_COUNTRIES=${VPN_COUNTRIES}
       - TZ=${TZ}
       - DNS_ADDRESS=172.20.0.5
-      - FIREWALL_OUTBOUND_SUBNETS=${LAN_SUBNET},172.20.0.0/24,10.8.1.0/24
+      - FIREWALL_OUTBOUND_SUBNETS=192.168.4.0/24,172.20.0.0/24,10.8.1.0/24
     ports:
       # Ports for services using network_mode: "service:gluetun"
       # Enables direct local access without Traefik (http://NAS_IP:PORT)
